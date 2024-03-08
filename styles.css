@@ -1,0 +1,12 @@
+body {background-color: bisque;}
+
+.img1 {}
+.img2 {width: 200px; height: 200px; border-radius: 50%;}
+.img3 {border: solid 3px red;}
+
+h1, h2 {font: bold 26px Arial;}
+
+a {font-size: 20px;}
+
+ul {color:cadetblue;}
+ol {color: blue;}
