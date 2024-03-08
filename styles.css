@@ -1,12 +1,78 @@
-body {background-color: bisque;}
+body {
+    background-color: bisque;
+}
 
 .img1 {}
-.img2 {width: 200px; height: 200px; border-radius: 50%;}
-.img3 {border: solid 3px red;}
 
-h1, h2 {font: bold 26px Arial;}
+.img2 {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
 
-a {font-size: 20px;}
+.img3 {
+    border: solid 3px red;
+}
 
-ul {color:cadetblue;}
-ol {color: blue;}
+h1,
+h2 {
+    font: bold 26px Arial;
+}
+
+a {
+    font-size: 20px;
+    border: solid 3px black;
+    display: block;
+    margin: 10px;
+    padding: 10px;
+}
+
+ul {
+    color: cadetblue;
+}
+
+ol {
+    color: blue;
+}
+
+.text-right {
+    text-align: end;
+}
+
+
+#page {
+    display: grid;
+    width: 100%;
+    height: auto;
+    grid-template-areas:
+        "head head"
+        "nav  main"
+        "nav  foot";
+    grid-template-rows: 1fr 1fr 1fd;
+    grid-template-columns: 1fr 3fr;
+}
+
+#page>header {
+    grid-area: head;
+    background-color: #8ca0ff;
+    padding: 20px;
+}
+
+#page>nav {
+    grid-area: nav;
+    background-color: #ffa08c;
+    padding: 20px;
+
+}
+
+#page>main {
+    grid-area: main;
+    background-color: #ffff64;
+    padding: 20px;
+}
+
+#page>footer {
+    grid-area: foot;
+    background-color: #8cffa0;
+    padding: 20px;
+}
